@@ -1,0 +1,13 @@
+# CLASE 1 
+- Instalación de Visual Studio Code.
+- Preguntar por estructura de datos:
+    - listas.
+    - diccionarios.
+    - tuplas.
+- Preguntar por las funciones intrínsecas.
+- repaso de tipos de datos.
+- repaso de buenas practicas en funciones:
+    - Definir tipado.
+    - comentarios.
+    - DocString.
+    - maximo de 79 caracteres.
