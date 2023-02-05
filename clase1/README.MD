@@ -10,6 +10,14 @@
     - comentarios.
     - DocString.
     - maximo de 79 caracteres.
+- Instalación de GIT.
+    - Instalación de git.
+    - Creación de cuenta.
+    - Primer repositorio.
+        - remote add origin
+        - add
+        - commit.
+        - push -u .
 
 ## Instalación de Visual Studio Code.
 - Descargar Visual Studio Code. https://code.visualstudio.com/Download
