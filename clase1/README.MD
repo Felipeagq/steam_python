@@ -41,6 +41,10 @@ En Python es posible especificar el tipado de un tipo de datos, este no determin
 - https://docs.python.org/3/library/typing.html
 - https://www.infoworld.com/article/3630372/get-started-with-python-type-hints.html
 - https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
+- http://omz-software.com/pythonista/docs/library/typing.html
+- https://docs.python.org/es/3/library/typing.html
+
+
 ````python
 from typing import List
 
@@ -55,15 +59,13 @@ base: float = 6.2
 ````python
 module_name, package_name, ClassName, method_name, ExceptionName, function_name, GLOBAL_CONSTANT_NAME, global_var_name, instance_var_name, function_parameter_name, local_var_name.
 ````
-
-### Buenas practicas en funciones
-Las buenas practicas de las funciones de python incluye, tipado de variables, comentarios y docstring
-````python
-def area_rectangulo(
-    altura:float,
-    base:float,
-    nombre:str
-) -> str:
-    response = f" {nombre} tiene un rectangulo de area {base*altura}"
-    return response
-````
+## Actividades
+1. Función para sacar area de un rectangulo.
+2. Función para sacar distancia entre dos puntos de un plano cartesiano.
+3. instalación de Extensiones para python.
+4. Modificar punto 2 con buenas practicas.
+    - Tipado en parametros
+    - Tipo de dato que retorna.
+    - DocString.
+    - Comentarios.
+5. Decoradores en Python.

@@ -4,4 +4,4 @@
 - app
     - config.
     - routes.
-    - schemas
+    - schemas.

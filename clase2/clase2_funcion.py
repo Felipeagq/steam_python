@@ -12,7 +12,6 @@ class ClasePractica():
     
     def __str__(self) -> str:
         return f"{self.nombre} tiene {self.edad} años"
-    
     def area_rectangulo( self,
         # altura:float,
         # base:float,
