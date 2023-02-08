@@ -1,23 +1,4 @@
-# CLASE 1 
-- Instalación de Visual Studio Code.
-- Repaso de estructura de datos:
-    - listas.
-    - diccionarios.
-    - tuplas.
-- Funciones intrínsecas.
-- repaso de buenas practicas en funciones:
-    - Definir tipado.
-    - comentarios.
-    - DocString.
-    - maximo de 79 caracteres.
-- Instalación de GIT.
-    - Instalación de git.
-    - Creación de cuenta.
-    - Primer repositorio.
-        - remote add origin
-        - add
-        - commit.
-        - push -u .
+# SEMANA 1
 
 ## Instalación de Visual Studio Code.
 - Descargar Visual Studio Code. https://code.visualstudio.com/Download
@@ -27,45 +8,91 @@
     - autoDocstring - Python Docstring Generator.
     - Python Extension Pack.
 
-## Repaso de estructura de datos.
-- https://docs.python.org/es/3/tutorial/datastructures.html
-- https://ricardogeek.com/estructuras-de-datos-en-python/
-- https://docs.hektorprofe.net/python/metodos-de-las-colecciones/metodos-de-los-diccionarios/
 
-## Funciones intrínsecas.
-- https://docs.python.org/es/3.8/library/functions.html
+## 1. Buenas practicas Python
+Las buenas practcas en python comprende lo siguiente:
+- Declaración de tipo de variables en los parametros.
+- Declaración de tipo de dato que retorna.
+- Comentarios.
+- DocString: documentación de una función.
 
-## Buenas practicas Python
-### Tipado en Python.
-En Python es posible especificar el tipado de un tipo de datos, este no determina el funcionamiento del script, pero es una ayuda para el programador.
-- https://docs.python.org/3/library/typing.html
-- https://www.infoworld.com/article/3630372/get-started-with-python-type-hints.html
-- https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
-- http://omz-software.com/pythonista/docs/library/typing.html
-- https://docs.python.org/es/3/library/typing.html
-
-
+Como ejemplo sencillo de una función con buenas practicas, tenemos la siguiente función.
 ````python
-from typing import List
+# function.py
 
-nombre: str = "Felipe"
-edad: int = 23
-dinero: float = 8.67 
-altura: float= 5.0
-base: float = 6.2
+# Función sin buenas practicas
+def area_rectangulo(a,b):
+    return a*b
+
+
+# Función aplicando las buenas practicas
+def area_rectangulo(
+    a:float,
+    b:float
+)->float:
+    """
+        Función para calcular el area de un rectangulo
+
+        Args:
+            a (int): Es la altura del rectangulo
+            b (int): Es la base del rectangulo
+
+        Returns:
+            area (int): Es el area del rectangulo
+    """
+    area = a*b
+    return area
 ````
 
-### Nomenclatura
+## 2. importación de modulos
+Nosotros podemos importar diferentes funciones de otros archivos de python, las cuales se le conoce como importación de librerias o modulos.
+Existen 3 formas de importar funciones en python 
 ````python
-module_name, package_name, ClassName, method_name, ExceptionName, function_name, GLOBAL_CONSTANT_NAME, global_var_name, instance_var_name, function_parameter_name, local_var_name.
+# main.py
+
+# importando el modulo
+import function
+
+# importando la función en especifico
+from function import area_rectangulo
+
+# importando todo el modulo
+from function import *
+
 ````
-## Actividades
-1. Función para sacar area de un rectangulo.
-2. Función para sacar distancia entre dos puntos de un plano cartesiano.
-3. instalación de Extensiones para python.
-4. Modificar punto 2 con buenas practicas.
-    - Tipado en parametros
-    - Tipo de dato que retorna.
-    - DocString.
-    - Comentarios.
-5. Decoradores en Python.
+
+## 3. name == main
+Cuando corremos un archivo de python, este ejecuta todo lo que está en el, pero nosotros podemos definir que se ejecuten ciertas lineas de codigo **SOLO SI ESE ES EL ARCHIVO PRINCIPAL DE LA EJECUCIÓN**, y cuando uno ejecuta un archivo, python le da un nombre temporal como ````__main__```` entonces al decirle ````if __name__ =="__main__"````, le estamos diciendo a python, solo cuando este archivo sea el principal ejecutandose, realiza lo siguente.
+
+Si ponemos eso en efecto, podemos ver el siguiente comportamiento en ````function.py````
+
+````python
+def area_rectangulo(
+    a:float,
+    b:float
+):
+    """
+        Función para calcular el area de un rectangulo
+
+        Args:
+            a (int): Es la altura del rectangulo
+            b (int): Es la base del rectangulo
+
+        Returns:
+            area (int): Es el area del rectangulo
+    """
+    area = a*b
+    return area
+
+
+# altura = float(input("ingrese altura del rectangulo"))
+# base = float(input("ingrese base del rectangulo"))
+# print(area_rectangulo(altura,base))
+
+# Lo que viene despues del if, solo se ejecuta si es el archivo principal de ejecución
+if __name__ == "__main__":
+    altura = float(input("ingrese altura del rectangulo"))
+    base = float(input("ingrese base del rectangulo"))
+    print(area_rectangulo(altura,base))
+
+````
