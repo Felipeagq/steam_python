@@ -1,7 +1,7 @@
 def area_rectangulo(
     a:float,
     b:float
-) -> float :
+):
     """
         Función para calcular el area de un rectangulo
 
@@ -16,4 +16,11 @@ def area_rectangulo(
     return area
 
 
-print(area_rectangulo(2,3))
+# altura = float(input("ingrese altura del rectangulo"))
+# base = float(input("ingrese base del rectangulo"))
+# print(area_rectangulo(altura,base))
+
+if __name__ == "__main__":
+    altura = float(input("ingrese altura del rectangulo"))
+    base = float(input("ingrese base del rectangulo"))
+    print(area_rectangulo(altura,base))
