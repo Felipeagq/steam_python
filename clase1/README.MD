@@ -36,6 +36,9 @@
 - https://docs.python.org/es/3.8/library/functions.html
 
 ## Buenas practicas Python
+- Mejor documentación en el codigo.
+- El autocompletado funciona mejor.
+- Legible para otras personas.
 ### Tipado en Python.
 En Python es posible especificar el tipado de un tipo de datos, este no determina el funcionamiento del script, pero es una ayuda para el programador.
 - https://docs.python.org/3/library/typing.html
@@ -45,27 +48,16 @@ En Python es posible especificar el tipado de un tipo de datos, este no determin
 - https://docs.python.org/es/3/library/typing.html
 
 
-````python
-from typing import List
 
-nombre: str = "Felipe"
-edad: int = 23
-dinero: float = 8.67 
-altura: float= 5.0
-base: float = 6.2
-````
-
-### Nomenclatura
-````python
-module_name, package_name, ClassName, method_name, ExceptionName, function_name, GLOBAL_CONSTANT_NAME, global_var_name, instance_var_name, function_parameter_name, local_var_name.
-````
 ## Actividades
 1. Función para sacar area de un rectangulo.
 2. Función para sacar distancia entre dos puntos de un plano cartesiano.
 3. instalación de Extensiones para python.
 4. Modificar punto 2 con buenas practicas.
-    - Tipado en parametros
+    - Tipado en parametros.
+        - Parametros con default.
     - Tipo de dato que retorna.
     - DocString.
     - Comentarios.
+    - Algunos tipos de datos/estructuras de typing
 5. Decoradores en Python.

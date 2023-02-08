@@ -1,7 +1,5 @@
-Vector = list[float]
+from typing import List,Dict,Set
 
-def scale(scalar: float, vector: Vector) -> Vector:
-    return [scalar * num for num in vector]
-
-# passes type checking; a list of floats qualifies as a Vector.
-new_vector = scale(2.0, [1.0, -4.2, 5.4])
+x: List[int,str]
+y: Dict[str,str]
+z: Set[str]
