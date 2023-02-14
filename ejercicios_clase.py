@@ -1,6 +1,7 @@
 # ejercicio 1
 # https://www.mclibre.org/consultar/python/ejercicios/ej-funciones-2.html
-# Escriba un programa que permita crear dos listas de palabras y que, a continuación, elimine de la primera lista los nombres de la segunda lista.
+# Escriba un programa que permita crear dos listas de palabras y que, a continuación,0 
+# elimine de la primera lista los nombres de la segunda lista.
 # El programa debe preguntar por la cantidad de elementos en cada lista
 
 numero = int(input("Dígame cuántas palabras tiene la lista: "))
