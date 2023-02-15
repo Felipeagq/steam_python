@@ -40,9 +40,36 @@ else:
 # ejercicio 2 (5)
 # Escribir una función que reciba una frase y devuelva un diccionario con las palabras que contiene y su longitud.
 # {"hola":{
-#     "palabras":"1",
 #     "longitud":4
 # }}
+
+
+"hola como estas"
+{
+    "hola":{
+        "longitud":4
+    },
+    "como":{
+        "longitud":4
+    },
+    "estas":{
+        "longitud":5
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

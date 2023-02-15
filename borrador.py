@@ -1,2 +1,7 @@
-lista = [1,2,3,4,5]
-print(3 in lista)
+dicc = {}
+dicc["hola"] = "algun valor"
+dicc["hol3434a"] = "algun vdfsdfsdalor"
+
+dicc["ho43434la"] = "algdsfsdfsun valor"
+
+print(dicc)
