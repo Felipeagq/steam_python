@@ -72,7 +72,7 @@ else:
 
 
 
-# Modificación de la tarea
+# Modificación de la tarea # 1
 # que ademas del nombre de la persona, pueda guardar un diccionario de los libros que prestó y la fecha
 {"felipe":[
     
@@ -86,10 +86,10 @@ else:
     "fecha":"2023-03-05"},
 ]}
 
-# modificar
+# modificar # 2
 # eliminar usuario (con validiación). eliminar libro
 
-# modificar 
+# modificar  # 3
 # si el libro está prestado o devuelto. validar estado de un libro
 
 {"felipe":[
