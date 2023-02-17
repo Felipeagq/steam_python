@@ -43,7 +43,6 @@ else:
 #     "longitud":4
 # }}
 
-
 "hola como estas"
 {
     "hola":{
@@ -88,12 +87,10 @@ else:
 ]}
 
 # modificar
-# eliminar usuario con validiación.
-# eliminar libro
+# eliminar usuario (con validiación). eliminar libro
 
 # modificar 
-# si el libro está prestado o devuelto.
-# validar estado de un libro
+# si el libro está prestado o devuelto. validar estado de un libro
 
 {"felipe":[
     
@@ -105,3 +102,8 @@ else:
     "fecha":"2023-02-14",
     "estado":"devuelto"},
 ]}
+
+
+felipe = [1,2,3]
+
+felipe = []
