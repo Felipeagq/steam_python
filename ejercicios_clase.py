@@ -58,8 +58,11 @@ else:
 
 
 
+#metodos de listas
+https://docs.hektorprofe.net/python/metodos-de-las-colecciones/metodos-de-las-listas/
 
-
+# metodos de diccionarios
+https://docs.hektorprofe.net/python/metodos-de-las-colecciones/metodos-de-los-diccionarios/
 
 
 
