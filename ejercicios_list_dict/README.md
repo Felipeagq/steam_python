@@ -8,4 +8,3 @@
 1. Dado un diccionario, el cual almacena las calificaciones de un alumno, siendo las llaves los nombres de las materia y los valores las calificación, mostrar en pantalla el promedio del alumno.
 2. A partir del diccionario del ejercicio anterior, mostrar en pantalla la materia con mejor promedio.
 3. crear una función que pida el nombre de un alumno y guarde dentro de un diccionario otro diccionarios con el nombre de la materia y la nota.
-4. 
