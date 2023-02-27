@@ -1,23 +1,8 @@
-personas = {"felipe":[
-    
-    {"libro":"habitos atomicos",
-    "fecha":"2023-02-14",
-    "estado":"prestado"},
-    
-    {"libro":"Club 5 am",
-    "fecha":"2023-02-14",
-    "estado":"devuelto"},
-],
-"gabriela":[
-    
-    {"libro":"li¿broia",
-    "fecha":"2023-02-14",
-    "estado":"prestado"},
-    
-    {"libro":"b",
-    "fecha":"2023-02-14",
-    "estado":"devuelto"},
-]}
-
-
-print(personas.get("felipe",{"ESTADO":"No encontrado"}))
+lista = []
+dicc = {}
+lista1 = ["andres","feloipe"]
+lista2 = [4,5,6]
+lista3 = [7,8,9]
+dicc[lista1[0]] = lista2
+dicc[lista1[1]] = lista3
+print(dicc)
