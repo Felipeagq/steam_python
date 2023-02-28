@@ -1,8 +1,9 @@
 class ClasePractica():
-    def __init__(self,nombre,edad) -> None:
-        self.nombre = nombre
-        self.edad = edad
+    def __init__(self) -> None:
+        # self.nombre = nombre
+        # self.edad = edad
+        # print(f"{self.nombre} tiene {self.edad}")
+        print(4+5)
         
-p1 = ClasePractica("felipe",23)
-print(p1.edad, p1.nombre)
-print(p1)
+p1 = ClasePractica()
+
