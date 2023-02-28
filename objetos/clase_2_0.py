@@ -40,37 +40,39 @@
 # # # p1.saludo()
 
 
-# # class Personas():
-# #     # libros = {}
+class Personas():
+    libros = {}
     
-# #     def __init__(self,nombre,apellido,edad,colegio):
-# #         self.nombre = nombre
-# #         self.apellido = apellido
-# #         self.edad = edad 
-# #         self.colegio = colegio
-# #         self.libros = {
-# #             "nombre":self.nombre,
-# #             "apellido":self.apellido,
-# #             "edad":self.edad,
-# #             "colegio":self.colegio,
-# #             "libros":{}
-# #         }
-# #     def agregar(self,nom_libro,fecha):
-# #         self.libros["libros"].update({nom_libro:fecha})
+    def __init__(self,nombre,apellido,edad,colegio):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.edad = edad 
+        self.colegio = colegio
+        # self.libros = {
+        #     "nombre":self.nombre,
+        #     "apellido":self.apellido,
+        #     "edad":self.edad,
+        #     "colegio":self.colegio,
+        #     "libros":{}
+        # }
+    def agregar(self,nom_libro,fecha):
+        self.libros.update({nom_libro:fecha})
 
 
-# # p1 = Personas("felipe","gonzalez","23","BIS")
-# # p2 = Personas("gabriela","gonzalez","23","BIS")
+p1 = Personas("felipe","gonzalez","23","BIS")
+p2 = Personas("gabriela","gonzalez","23","BIS")
 
-# # p2.agregar("python","24/02/2023")
-# # p2.agregar("java","12/02/2023")
+p2.agregar("python","24/02/2023")
+p2.agregar("java","12/02/2023")
 
-# # p1.agregar("docker","24/02/2023")
-# # p1.agregar("aws","12/02/2023")
+p1.agregar("docker","24/02/2023")
+p1.agregar("aws","12/02/2023")
 
-# # print(p2.libros)
-# # print("\n")
-# # print(p1.libros)
+print(p2.libros)
+print("\n")
+print(p1.libros)
+
+print("-"*50)
 
 # class Persona: 
 # 	# atributos
@@ -95,26 +97,27 @@
 
 
 
-# class Banco():
-#     monto = 0
+class Banco():
+    monto = 0
     
-#     def __init__(self,nombre)->None:
-#         self.nombre = nombre
-#         self.monto_persona = 0
+    def __init__(self,nombre)->None:
+        self.nombre = nombre
+        self.monto_persona = 0
     
-#     def ingresar_dinero(self,dinero):
-#         monto = monto + dinero
-#         self.monto_persona = self.monto_persona + dinero
+    def ingresar_dinero(self,dinero):
+        self.monto = self.monto + dinero
+        self.monto_persona = self.monto_persona + dinero
 
-# felipe = Banco("felipe")
-# felipe.ingresar_dinero(15)
-# print(felipe.monto_persona)
-# godofredo = Banco("Godofredo")
-# godofredo.ingresar_dinero(7)
-# print(godofredo.monto_persona)
+felipe = Banco("felipe")
+felipe.ingresar_dinero(15)
+print(felipe.monto_persona)
 
-# print(felipe.monto)
-# print(godofredo.monto)
+godofredo = Banco("Godofredo")
+godofredo.ingresar_dinero(7)
+print(godofredo.monto_persona)
+print("-----")
+print(felipe.monto)
+print(godofredo.monto)
 
 
 
@@ -172,27 +175,27 @@
 # print(felipe.gasolina)
 # print(felipe.kilometros)
 
-class Robot():
-    # variable de clase
-    # x = 0
-    # y =0 
-    def __init__(self,x,y,nombre):
-        self.x = x
-        self.y = y
-        self.nombre = nombre 
+# class Robot():
+#     # variable de clase
+#     # x = 0
+#     # y =0 
+#     def __init__(self,x,y,nombre):
+#         self.x = x
+#         self.y = y
+#         self.nombre = nombre 
     
-    def horizontal(self):
-        n = int(input(f"cuantos quiere que se mueva {self.nombre} horizontalmente: "))
-        self.x = self.x + n
+#     def horizontal(self):
+#         n = int(input(f"cuantos quiere que se mueva {self.nombre} horizontalmente: "))
+#         self.x = self.x + n
     
-    def vertical(self):
-        n = int(input(f"cuantos quiere que se mueva {self.nombre} verticalmente: "))
-        self.y = self.y + n
+#     def vertical(self):
+#         n = int(input(f"cuantos quiere que se mueva {self.nombre} verticalmente: "))
+#         self.y = self.y + n
 
-    def posicion(self):
-        print(f"{self.nombre} se encuentre en ({self.x},{self.y})")
+#     def posicion(self):
+#         print(f"{self.nombre} se encuentre en ({self.x},{self.y})")
 
-robotcito = Robot(0,0,"Humberto")
-robotcito.horizontal()
-robotcito.vertical()
-robotcito.posicion()
+# robotcito = Robot(0,0,"Humberto")
+# robotcito.horizontal()
+# robotcito.vertical()
+# robotcito.posicion()

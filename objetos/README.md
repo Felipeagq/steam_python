@@ -190,28 +190,45 @@ Posición actual: 2,-1
 ```
 
 ### Ejercicio 3
-Mejora el ejercicio anterior de forma que el robot pueda recibir una secuencia de movimientos.
-Por ejemplo:
-- mueve("AADDADIR")
-
-También deberá tener otros dos métodos: uno que devuelva todas las órdenes recibidas y otro capaz de listar los movimientos necesarios para volver a la posición inicial (0,0).
-
-Aquí tienes un ejemplo de una posible ejecución del programa:
-
-```
-Introduce la orden: AADAD
-Posición actual: 3,2
-Introduce la orden: IAADR
-Posición actual: 4,2
-Introduce la orden: fin
-Posición actual: 4,2
-
-Órdenes recibidas: AADADIAADRfin
-Secuencia para posición inicial: RRRRII
-```
-
-### Ejercicio 4
 Crea la clase Triangulo que almacene la longitud de cada uno de sus lados. Deberá contener los siguientes métodos:
 - `area()`: devuelve el área del triángulo
 - `forma()`: indica si se trata de un triángulo equilátero, isósceles o irregular.
 - `perímetro()`: devuelve el perímetro del triángulo.
+
+
+## Herencia
+
+La herencia es una técnica de la Programación Orientada a Objetos en la que una clase (conocida como **clase hija** o **subclase**) hereda todos los métodos y propiedades de otra clase (conocida como **padre** o **clase base**).
+
+La sintaxis para definir una clase que herede de otra es la siguiente:
+
+```python
+class ClaseBase:
+	# código de la clase base
+
+class Subclase(BaseClass):
+	# código de la subclase
+```
+
+### Demostración
+````py
+class SerVivo():
+    sentidos = ["olfato","vista","oido","gusto","tacto"]
+
+class Persona(SerVivo):
+    def __init__(self,nombre):
+        self.nombre = nombre
+    
+
+p1 = Persona("felipe")
+print(p1.sentidos)
+````
+
+### Ejercicios:
+
+1.  Crea una clase llamada Cuenta que tendrá los siguientes atributos: titular (que es una persona) y cantidad (puede tener decimales). El titular será obligatorio y la cantidad es opcional. Construye los siguientes métodos para la clase:
+    1.  mostrar(): Muestra los datos de la cuenta.
+    2.  ingresar(cantidad): se ingresa una cantidad a la cuenta, si la cantidad introducida es negativa, no se hará nada.
+    3.  retirar(cantidad): se retira una cantidad a la cuenta. La cuenta puede estar en números rojos.
+2. Ejercicios de servivo, pero que los metodos heredados sean diferentes, en vez de caminar, correr, en vez de hablar, ladrar o maullar.
+3. 
