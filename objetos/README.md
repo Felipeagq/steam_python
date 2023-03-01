@@ -227,8 +227,8 @@ print(p1.sentidos)
 ### Ejercicios:
 
 1.  Crea una clase llamada Cuenta que tendrá los siguientes atributos: titular (que es una persona) y cantidad (puede tener decimales). El titular será obligatorio y la cantidad es opcional. Construye los siguientes métodos para la clase:
-    1.  mostrar(): Muestra los datos de la cuenta.
-    2.  ingresar(cantidad): se ingresa una cantidad a la cuenta, si la cantidad introducida es negativa, no se hará nada.
-    3.  retirar(cantidad): se retira una cantidad a la cuenta. La cuenta puede estar en números rojos.
-2. Ejercicios de servivo, pero que los metodos heredados sean diferentes, en vez de caminar, correr, en vez de hablar, ladrar o maullar.
-3. 
+    -   mostrar(): Muestra los datos de la cuenta.
+    -   ingresar(cantidad): se ingresa una cantidad a la cuenta, si la cantidad introducida es negativa, no se hará nada.
+    -  retirar(cantidad): se retira una cantidad a la cuenta. La cuenta puede estar en números rojos.
+2. Desarrollar un programa que cargue los datos de un triángulo. Implementar una clase con los métodos para inicializar los atributos, imprimir el valor del lado con un tamaño mayor y  el tipo de triángulo que es (equilátero, isósceles o escaleno).
+3. Ejercicios de servivo, pero que los metodos heredados sean diferentes, en vez de caminar, correr, en vez de hablar, ladrar o maullar.
