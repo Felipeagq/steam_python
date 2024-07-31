@@ -236,3 +236,4 @@ Investigar.
 - Listas y sus metodos.
 - Diccionarios y sus metodos.
 - string y sus metodos.
+- Que son los modulos y como crearlos.
