@@ -232,6 +232,7 @@ Descripción: Estás desarrollando un sistema de chat que necesita filtrar mensa
 Descripción: Un profesor desea calcular el promedio de las notas de sus estudiantes. Los estudiantes ingresan sus notas una a una. Si se ingresa una nota fuera del rango de 0 a 100, el programa debe ignorar esa entrada y solicitar una nueva nota. El programa debe detenerse cuando se ingrese la palabra 'fin' y luego calcular el promedio de las notas válidas ingresadas.
 
 # TAREAS 
-Investigar que son y los metodos:
-- Listas.
-- diccionarios.
+Investigar.
+- Listas y sus metodos.
+- Diccionarios y sus metodos.
+- string y sus metodos.
