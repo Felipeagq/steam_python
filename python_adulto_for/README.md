@@ -237,3 +237,4 @@ Investigar.
 - Diccionarios y sus metodos.
 - string y sus metodos.
 - Que son los modulos y como crearlos.
+- Sintaxis de las funciones.
