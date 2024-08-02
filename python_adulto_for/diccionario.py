@@ -9,5 +9,5 @@ felipe = {
 # print(felipe.values())
 # print(felipe.items())
 
-print(felipe.get("novia","Sharid"))
+
 
