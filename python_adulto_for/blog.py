@@ -24,6 +24,7 @@ while True:
           3. eliminar un post
           4. agrega un post
           5. lista todos tus post
+          6. listar todos los post
           ------------------------
           """)
     accion = int(accion)
