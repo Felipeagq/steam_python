@@ -7,15 +7,57 @@
 
 # funciones, diccionario, lista, if 
 
-usuarios = []
+usuarios = [
+    {'user': 'felipe', 'pass': 'felipe123'}, 
+    {'user': 'cyan', 'pass': 'cyan123'}
+]
 
-def login(user,psd):
+publicaciones = [{'titulo': 'hola', 'descripcion': 'hay dios mio', 'autor': 'felipe'},
+            {'titulo': 'aja', 'descripcion': 'carambaaaa', 'autor': 'felipe'}]  
+
+def create_post(titulo,descripcion,autor):
+    create_post = {
+        "titulo":titulo,
+        "descripcion":descripcion,
+        "autor": autor
+    }
+    publicaciones.append(create_post)
+
+def create_user(user,psd):
     usuario = {
         "user":user,
         "pass":psd
     }
     usuarios.append(usuario)
+
+def eliminar_post(titulo):
+    for i in publicaciones:
+        if i.get("titulo") == titulo:
+            publicaciones.remove(i)
+            
     
+    
+def listar_post(autor):
+    lista_publicaciones = []
+    for i in publicaciones:
+        if i.get("autor") == autor:
+            lista_publicaciones.append(i)
+    print(lista_publicaciones)
+            
+    
+def login(user,psd):
+    usuario_validado = False
+    password_validado = False
+    for usuario in usuarios:
+        for key,value in usuario.items():
+            if key == "user" and value == user:
+                usuario_validado = True
+            if key == "pass" and value == psd:
+                password_validado = True
+    if usuario_validado == True and password_validado == True:
+        return True
+    return False
+
 while True:
     accion =input("""
           Que desea hacer:
@@ -27,14 +69,51 @@ while True:
           6. listar todos los post
           ------------------------
           """)
-    accion = int(accion)
-    if accion == 1:
+    
+    if accion == "1":
         break
-    elif accion == 2:
+    elif accion == "2":
         user = input("ingresa usuairo: ")
         psd = input("ingresa constraseña: ")
-        login(user,psd)
+        create_user(user,psd)
         print("-"*50)
+    
+    elif accion == "4":
+        user = input("ingresa usuairo: ")
+        psd = input("ingresa constraseña: ")
+        usuario = login(user,psd)
+        print("puedes agregar un post: ")
+        while usuario:
+            titulo = input("agrega un titulo: ")
+            descripcion = input("agrega un descripción: ")
+            create_post(titulo,descripcion,user)
+            print(publicaciones)
+            salir = input("¿deseas salir ? si/no:  ")
+            if salir == "si":
+                break
+            
+        else:
+            print("Hey tu usuario no existe")
+            
+    elif accion == "5":
+        user = input("ingresa usuairo: ")
+        psd = input("ingresa constraseña: ")
+        usuario = login(user,psd)
+        if usuario:
+            listar_post(user)
+    
+    elif accion == "3":
+        user = input("ingresa usuairo: ")
+        psd = input("ingresa constraseña: ")
+        usuario = login(user,psd)
+        if usuario:
+            listar_post(user)
+            A = input("cual es el titulo: ")
+            eliminar_post(A) 
+            listar_post(user)
+        
+    
+        
 
 
 print(usuarios)

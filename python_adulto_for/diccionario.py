@@ -5,9 +5,9 @@ felipe = {
     "vive":True
 }
 
-# print(felipe.keys())
-# print(felipe.values())
-# print(felipe.items())
+print(felipe.keys())
+print(felipe.values())
+print(felipe.items())
 
 
 
