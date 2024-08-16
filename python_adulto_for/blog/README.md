@@ -1,8 +1,8 @@
-Tener instalado
-    - git bash
-    - pip 
+# PASOS PARA DESARROLLAR UN PROYECTO EN PYTHON
 
-1.  instalar virtualenv `` pip install virtualenv``
+1.  Asegurarse de tener instalado el entorno virtual :  virtualenv `` pip install virtualenv``
+2. Estando dentro de la carpeta creamos el entorno virtual ``python -m virtualenv venv``
+3. activamos entorno virtual ``source venv/Script/activate``
 2. creamos un archivo llamado ``requirements.txt``
     - dentro escribimos ``streamlit``
 3. correr el comando ``pip install -r requirements.txt``
