@@ -7,7 +7,7 @@
     - dentro escribimos ``streamlit``
 3. correr el comando ``pip install -r requirements.txt``
 
-streamlit run entrypoint.py --server.port=8080 --server.address=localhost
+streamlit run main.py --server.port=8080 --server.address=localhost
 
 
 # PIP
